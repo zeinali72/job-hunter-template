@@ -1,10 +1,26 @@
-# Submit-ready output and generated PDFs - personal, not version-controlled.
+# ============================================================================
+# PERSONAL DATA - never committed. Everyone who clones this repo keeps their
+# own profile and job pipeline locally; only the shared tooling is tracked.
+# ============================================================================
+
+# Your real profile lives in profile/ (copied from profile/examples/ by setup.sh)
+# and stays local. Only the example templates are tracked.
+profile/*
+!profile/examples/
+
+# Your job pipeline (listings, scores, tailored CVs, tracker) is all personal.
+jobs/
+
+# Submit-ready output and generated PDFs.
 output/
 *.pdf
 
 # Local-only files (e.g. .claude/settings.local.json).
 *.local
 *.local.json
+
+# Local backups of pre-template history or personal data.
+backups/
 
 # LaTeX build artefacts.
 *.aux
