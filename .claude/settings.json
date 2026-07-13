@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "Bash(git:*)",
+      "Bash(latexmk:*)",
+      "Bash(pdflatex:*)",
+      "Bash(xelatex:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(date:*)",
+      "Bash(find:*)",
+      "Bash(rg:*)",
+      "mcp__mcp-server-linkedin__search_jobs",
+      "mcp__mcp-server-linkedin__get_job_details",
+      "mcp__mcp-server-linkedin__search_companies",
+      "mcp__mcp-server-linkedin__get_company_profile",
+      "mcp__mcp-server-linkedin__get_company_posts",
+      "mcp__mcp-server-linkedin__get_company_employees",
+      "mcp__mcp-server-linkedin__get_my_profile",
+      "mcp__indeed"
+    ],
+    "deny": [
+      "mcp__mcp-server-linkedin__send_message",
+      "mcp__mcp-server-linkedin__connect_with_person"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+# Submit-ready output and generated PDFs - personal, not version-controlled.
+output/
+*.pdf
+
+# Local-only files (e.g. .claude/settings.local.json).
+*.local
+*.local.json
+
+# LaTeX build artefacts.
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz

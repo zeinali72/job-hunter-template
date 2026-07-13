@@ -1,0 +1,27 @@
+# profile.yml - machine-read profile config. Single source of truth for structured fields.
+# Fill this in before running /scan, /score, or /tailor - the pipeline reads it directly.
+
+name: TODO
+base_location: TODO
+
+target_titles:                         # job titles to search for in /scan
+  - TODO
+
+target_companies:                      # priority employers (from CLAUDE.md)
+  - TODO
+
+ats_threshold: 75                      # do not prep an application below this ATS score
+
+contacts:                              # warm intros - CLAUDE.md says this channel comes FIRST.
+  # /scan, /cover, /applypack and /followup all key off this list: a role at one of these
+  # companies gets flagged and an intro ask drafted before any cold application.
+  # Keep details light (full names/channels can live outside the repo) but list every
+  # company where a warm path exists, or the warm-intro logic never fires.
+  # - name: TODO
+  #   company: TODO
+  #   relationship: warm intro
+
+links:
+  linkedin: TODO
+  github: TODO
+  scholar: TODO
