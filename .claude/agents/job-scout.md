@@ -13,8 +13,9 @@ not score, tailor, or apply. You are strictly read-only against every external s
 - Existing `jobs/*/` folders and `jobs/tracker.csv` for deduplication.
 
 ## Sources to sweep (read-only)
-1. **Indeed MCP** - if an `mcp__indeed__*` tool is connected, use it for UK listings. If it is
-   not connected, note "Indeed not connected, skipped" and carry on. Do not block on it.
+1. **Indeed MCP** - if an `mcp__indeed__*` tool is connected, use it for listings in the
+   candidate's target location (`profile/profile.yml` base_location). If it is not connected,
+   note "Indeed not connected, skipped" and carry on. Do not block on it.
 2. **My LinkedIn search** - `mcp__mcp-server-linkedin__search_jobs` (and `get_job_details`,
    `search_companies`, `get_company_profile` for context). My own searches only. Do NOT pull
    other people's profiles. Keep request volume human-paced.

@@ -7,7 +7,7 @@ base_location: TODO
 target_titles:                         # job titles to search for in /scan
   - TODO
 
-target_companies:                      # priority employers (from CLAUDE.md)
+target_companies:                      # priority employers (see profile/positioning.md)
   - TODO
 
 ats_threshold: 75                      # do not prep an application below this ATS score

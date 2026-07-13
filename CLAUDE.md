@@ -33,15 +33,15 @@ is public and confirm first.
 
 ## Tools available
 
-- **Indeed MCP** - read-only sourcing of listings (title, keyword, location, job detail).
-- **LinkedIn MCP** - READ-MOSTLY, logged into the candidate's own account (`.mcp.json`
-  registers the server; each user authenticates their own account on first use). Only their
-  own searches and their own profile. Do not scrape other people's profiles. Keep request
-  volume human-paced. Never auto-message or auto-connect.
-- **Gmail + Google Calendar** - recruiter threads and scheduling calls. Draft replies,
-  never send without explicit review.
-- **Playwright (via job-scout agent)** - sweep PUBLIC career portals only
-  (Greenhouse, Ashby, Lever, company pages). Never authenticated LinkedIn sessions.
+- **LinkedIn MCP** (ships in `.mcp.json`) - READ-MOSTLY, logged into the candidate's own
+  account (each user authenticates their own account on first use). Only their own searches
+  and their own profile. Do not scrape other people's profiles. Keep request volume
+  human-paced. Never auto-message or auto-connect.
+- **Public career portals (via job-scout agent's WebFetch/WebSearch)** - PUBLIC pages only
+  (Greenhouse, Ashby, Lever, company pages). Never authenticated sessions.
+- **Optional, connect your own:** an Indeed MCP (read-only listing sourcing) and
+  Gmail/Calendar MCPs (recruiter threads and scheduling - draft replies, never send without
+  explicit review). The pipeline uses them when connected and skips them when not.
 
 Hard rule: Claude proposes and prepares; the candidate submits. No application, message, or
 connection request is ever sent automatically.

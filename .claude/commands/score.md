@@ -22,7 +22,8 @@ For each listing:
 5. Write `jobs/<listing>/score.md`: ATS score, recruiter-skim verdict, per-criterion fit
    grades, overall fit grade, missing keywords, target ATS platform (if known), and a
    one-line verdict.
-6. If ATS < 75 (the threshold in profile.yml), mark "SKIP - below threshold" and stop. If the
+6. If ATS is below the `ats_threshold` in `profile/profile.yml`, mark "SKIP - below
+   threshold" and stop. If the
    fit grade is B+ or better despite a low ATS score, flag "manual-route candidate" instead of
    skipping silently (warm intro / direct approach may beat the portal).
 

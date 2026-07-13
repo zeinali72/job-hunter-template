@@ -9,8 +9,8 @@ Run pipeline step 7 (followup) from CLAUDE.md.
    ago with no later status. Compute "today" with `date +%F`.
 2. List warm-intro contacts from `profile/profile.yml` whose companies are in the pipeline but
    have not been chased yet. Warm intros come first.
-3. For each, draft a short, polite follow-up with the `recruiter-coach` skill - British
-   English, plain ASCII, specific to the role.
+3. For each, draft a short, polite follow-up with the `recruiter-coach` skill - in the
+   candidate's language variant (`profile/positioning.md`), plain ASCII, specific to the role.
 4. Output a table (company, role, days since applied, suggested action) followed by the draft
    messages.
 
