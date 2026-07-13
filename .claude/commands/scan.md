@@ -5,6 +5,9 @@ allowed-tools: Task, Read, Write, Edit, Glob, Grep, Bash
 ---
 Run pipeline step 1 (scan) from CLAUDE.md for the query: $ARGUMENTS
 
+Precondition: `./setup.sh` has been run (`profile/profile.yml` and `jobs/tracker.csv` exist).
+If not, stop and tell the user to run it first.
+
 1. Dispatch the `job-scout` subagent with this query. It sweeps, read-only: the Indeed MCP
    (when connected), my own LinkedIn `search_jobs`, and PUBLIC career portals
    (Greenhouse, Ashby, Lever, and Workday/SuccessFactors company pages for my target firms).

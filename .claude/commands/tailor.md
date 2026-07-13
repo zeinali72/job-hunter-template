@@ -5,7 +5,8 @@ allowed-tools: Read, Write, Edit, Bash
 ---
 Run pipeline step 3 (tailor) from CLAUDE.md for: $ARGUMENTS
 
-Precondition: `jobs/$ARGUMENTS/score.md` exists and ATS >= 75. If not, stop and say why.
+Precondition: `jobs/$ARGUMENTS/score.md` exists and ATS >= the `ats_threshold` in
+`profile/profile.yml`. If not, stop and say why.
 
 1. Read `profile/master-cv-professional.tex`, `jobs/$ARGUMENTS/job.md`, and
    `jobs/$ARGUMENTS/score.md`.

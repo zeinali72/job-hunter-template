@@ -56,8 +56,10 @@ Open the folder in Claude Code and start with `/scan <your search query>`.
 
 - [Claude Code](https://claude.com/claude-code)
 - `latexmk` or `pdflatex` to build CVs/cover letters to PDF
+- `pdftotext` (poppler-utils) - used to verify the ATS parse of built PDFs and to produce
+  paste-ready plain text in `/applypack`
 - `uv`/`uvx` if you want the LinkedIn MCP server (`.mcp.json`) - optional; `/scan` also
-  works from Indeed MCP and public career portals
+  works from public career portals (and an Indeed MCP if you connect one)
 
 ## Hard rules baked into this repo
 

@@ -5,7 +5,8 @@ allowed-tools: Read, Write, Edit, Bash, Glob
 ---
 Run pipeline step 5 (applypack) from CLAUDE.md for: $ARGUMENTS
 
-Precondition: `cv.pdf`, `cover.md`, and `score.md` (ATS >= 75) exist for the listing.
+Precondition: `cv.pdf`, `cover.md`, and `score.md` (ATS >= the `ats_threshold` in
+`profile/profile.yml`) exist for the listing.
 
 1. Copy the final `cv.pdf` and cover into `output/<company>-<role>/`.
 2. Also write `output/<company>-<role>/cv-plaintext.txt` (`pdftotext -layout cv.pdf`) - many

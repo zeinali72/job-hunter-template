@@ -19,13 +19,14 @@ A single listing folder name (e.g. `acme-corp-flood-risk-modeller`). Read `jobs/
    filter. Verdict PASS / BORDERLINE / FAIL, plus what the reader learns in 10 seconds and
    what they should learn but don't.
 3. **Fit pass (A-F)** - apply the CLAUDE.md rubric across: title match, domain match, seniority
-   fit, location (UK / remote / my base), must-have skills present, growth signal. Give a grade
-   per criterion and an overall grade.
+   fit, location (vs the candidate's base/remote preference in `profile/profile.yml`), must-have
+   skills present, growth signal. Give a grade per criterion and an overall grade.
 
 ## Output
 Write `jobs/<listing>/score.md` with: ATS score, recruiter-skim verdict, per-criterion fit
 grades + overall grade, missing keywords, target ATS platform, and a one-line verdict. If
-ATS < 75 (profile.yml threshold), mark "SKIP - below threshold"; but if the fit grade is B+
+ATS is below the `ats_threshold` in `profile/profile.yml`, mark "SKIP - below threshold";
+but if the fit grade is B+
 or better, add "manual-route candidate" so a strong role is never skipped silently.
 
 Return one line to the caller: `<listing> | ATS xx | Fit X | keep/skip`.
